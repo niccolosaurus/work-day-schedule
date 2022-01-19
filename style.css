@@ -82,7 +82,6 @@ textarea {
 
 .flex-container {
   display: flex;
-  position: relative;
 }
 
 .flex-width {
@@ -96,19 +95,26 @@ textarea {
 }
 
 .hover-effect:hover {
-  background-color: lightsalmon;
+  background-color: yellow;
+  cursor: pointer;
+
 }
 
-.block {
-  display: block;
-  border: none;
-  padding: 10px 10px 10px 10px;
-  cursor: pointer;
-  text-align: center;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  left: 37%;
+.buttonLocalStorage {
+  height: 20px;
+  width: 40px;
+  background-color: green;
+  border-radius: 25%
+}
+
+.past {
+  background-color: gray;
+}
+
+.current {
+  background-color: red;
+}
+
+.future {
+  background-color: green;
 }

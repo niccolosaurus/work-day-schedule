@@ -1,36 +1,27 @@
-// const d = new Date();
-// document.getElementById("currentDay").innerHTML = d;
-
-let day = moment().format('MMMM Do YYYY');
-document.getElementById("currentDay").innerHTML = day;
-
-
-// let myStorage = window.localStorage;
-// console.log(myStorage);
-
-// localStorage.setItem('myCat', 'Tom');
-
-// let cat = localStorage.getItem('myCat');
-
-// const textArea = document.createElement("textArea");
-// textArea.setAttribute("type", "text");
-// document.body.appendChild(textArea);
-
-//event listner for the click which then saves what is in the box to the local storage.
-//function()
-
-$(document).ready(function () {
-    // $(".buttonLocalStorage").on("click", function() {
-    //     localStorage.setItem("myContent", $(".textArea").val());
-    //     console.log(localStorage.getItem("myContent"));
-    // })
-
-    $("*[data-store]").each(function () {
-        $(this).val(localStorage.getItem("item-" + $(this).attr("data-store")));
+$(document).ready(function(){
+    let day = moment().format('MMMM Do YYYY');
+  document.getElementById("currentDay").innerHTML = day;
+      $("*[hour]").each(function () {
+        let hour = parseInt($(this).attr("hour"))
+        // $(this).html().match(/\d+/)[0]
+        let currentHour = parseInt(moment().format("H"))
+       if (currentHour > hour) {
+         $(this).addClass('past')
+       } else if (currentHour == hour) {
+         $(this).addClass('current')
+       } else if (currentHour < hour) {
+          $(this).addClass('future')
+       }
     });
-
-    $("*[data-store]").on("click", function (itm) {
-        console.log('myContent', $(this).attr("data-store"))
-        localStorage.setItem("item-" + $(this).attr("data-store"), $("*[data-store]").val());
+    
+    $("*[data-store]").each(function () {
+      $(this).val(localStorage.getItem("item-" + $(this).attr("data-store")));
+    });
+  
+    $("*[data-click]").on("click", function (itm) {
+     let plannerClick = $(this).attr("data-click")
+    //   console.log( $(this).attr("*[data-store]").val())
+      let value = $(`[data-store=${plannerClick}]`).val()
+      localStorage.setItem ("item-" + $(this).attr("data-click"), value);
     })
-});
+  });
