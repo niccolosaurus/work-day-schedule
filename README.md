@@ -21,6 +21,10 @@ That is a clickable element and it will save the information to your local stora
 
 ![Local-Storage] https://raw.githubusercontent.com/niccolosaurus/work-day-schedule/main/Pics/local-storage.PNG
 
+This is how the webpage looks with the "past, present, and future" coloration working.  
+
+![Past-Present-Future] https://raw.githubusercontent.com/niccolosaurus/work-day-schedule/main/Pics/Past%2C%20Present%2C%20Future.PNG
+
  https://niccolosaurus.github.io/work-day-schedule/
 
  
