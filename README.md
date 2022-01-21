@@ -2,7 +2,7 @@
 
 This is a calendar for your work day. It starts at 8 AM and runs through 5 PM.
 
-![Planner-1](https://raw.githubusercontent.com/niccolosaurus/work-day-schedule/main/Pics/Planner.PNG)
+![Planner-1](https://raw.githubusercontent.com/niccolosaurus/work-day-schedule/main/Pics/planner-1.PNG)
 ![Planner-2](https://raw.githubusercontent.com/niccolosaurus/work-day-schedule/main/Pics/Planner-2.PNG)
 
 It displays the current date,
