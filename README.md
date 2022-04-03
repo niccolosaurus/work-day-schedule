@@ -39,18 +39,16 @@ https://choosealicense.com/licenses/mit/
 
 MIT License
 
-Copyright (c) [2022] [Niccolo Eck]
+Copyright (c) [2022] [NiccoloEck]
 
 
 ### Contribution
-me(niccolosaurus)
-
-### Test-Instructions
-
+niccolosaurus(Niccolo Eck)
 
 ### Questions
-[Github Profie](https://github.com/niccolosaurus)
-nicco.eck@gmail.com
+[Github Profie](https://github.com/niccolosaurus)</br>
+nicco.eck@gmail.com</br>
+
 
 https://niccolosaurus.github.io/work-day-schedule/
 
